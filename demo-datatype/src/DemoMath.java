@@ -2,6 +2,9 @@ public class DemoMath {
 
     // main + Enter 
     public static void main(String[] args) {
+        //byte, short, int, long
+        //float, double
+        //char, boolean 
         // + - * / %
         // % -> The remainder of division
         int remainder = 10 % 3; 
@@ -114,7 +117,7 @@ public class DemoMath {
         char c80 = (char) v11;
         System.out.println(c80); // A 
 
-        int v12 = 65620; 
+        int v12 = 6560; 
         char c81 = (char) v12; 
         System.out.println(c81); // T (65620 - 65535)
 

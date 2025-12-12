@@ -16,7 +16,12 @@ public boolean isFlush() { // 同花荀
         return true; 
     }
 
-public boolean isFullHouse() { // 俘虜 (2 隻加 3 隻)
+    // Test Case Design: 
+    // 1. Return statement
+    // 2. for loop (break, continue)
+    // 3. array (margin)
+
+    public boolean isFullHouse() { // 俘虜 (2 隻加 3 隻)
     if (this.cards.length != 5)
         return false; 
     
@@ -24,6 +29,7 @@ public boolean isFullHouse() { // 俘虜 (2 隻加 3 隻)
     for (int i = 0; i < this.cards.length; i++) {
         counts[this.cards[i].getRank() - '2']++;    // ! '2' is the smallest ASCII
     }
+
     // 3 2 
     boolean withThreeCount = false; 
     boolean withTwoCount = false; 
@@ -33,9 +39,11 @@ public boolean isFullHouse() { // 俘虜 (2 隻加 3 隻)
         if (counts[i] == 2)
             withTwoCount = true; 
     }
-    return withThreeCount && withTwoCount; 
+    return withThreeCount && withTwoCount; // 4 cases here
 }
 public static void main(String[] args) {
-    
+    Card[] cards2 = new Card[] {new Card('A', 'D'), new Card('A', 'S'), new Card ('A', 'C'), new Card('8', 'D'), new Card('8', 'S') 
+}; 
+System.out.println(new HandManager(cards2).isFullHouse()); // false
     }
 }

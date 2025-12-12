@@ -208,16 +208,22 @@ public class DemoExercise {
         sum10 += arr[i]; 
     }
     System.out.println("The Sum is " + sum10);
+    
+    // Exercies
+    for (int i = 1; i <= 5; i++) {
+        System.out.println(i);
+    }
 
-    // JavaQuest 8 
-    public class JavaQuest8 {
-    // Write a loop to find the second max number.
-    int[] testCase1 = new int[] {-10, 5, 100, 240, 230, 80}; // Second Max = 230
-    int[] testCase2 = new int[] {-10, 5, 100, 120, 240, 200}; // Second Max = 200
-    int[] testCase3 = new int[] {-10, 5, 120, -100, 100, 240}; // Second Max = 120
-    int[] testCase4 = new int[] {-10, 5, 100, 240, 240, 80}; // Second Max = 240
-        int secondMax = 0; 
-        for (int = 0; int < int.length)
-}
+    String[] names = {"Sammi", "Dodo", "Anita"}; 
+
+    for (int i = 0; i < names.length; i++) {
+        System.out.println(names[i]);
+    }
+
+    for (int i = 10; i >= 1; i--) {
+        System.out.println(i);
+    }
+
+    
 }
 }

@@ -6,7 +6,10 @@ public class Deck {
 
     public static char[] RANKS = new char[] // 
     {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'}; 
-    public static char[] SUITS = new char[] // {'D', 'C', 'H', 'S'};
+    public static int[] RANKS_SEQ = new int[] // 
+    {12, 13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}; 
+    public static char[] SUITS = new char[] // 
+    {'D', 'C', 'H', 'S'};
 
     // ! Attributes
     private Card[] cards; 

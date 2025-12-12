@@ -61,5 +61,10 @@ public class leetcode {
                 return true; 
         }
         return false; 
+
+    // Leetcode 1475
+    
+    // Leetcode 500
+    
     }
 }

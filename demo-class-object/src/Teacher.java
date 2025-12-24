@@ -1,9 +1,55 @@
 public class Teacher {
     private Candy[] candies; 
 
+    public Teacher() {
+        this.candies = new Candy[0]; 
+    }
+
+    public void add(Candy candy) {
+        //
+        //
+    }
+
+    public void add(Candy[] candies) {
+        for (Candy candy : candies) {
+            this.add(candy); 
+        } 
+    }
+    // Cat Dog
+    public void distribute(Student student) {
+        // ! Teacher object doesn't even know how student store the candies
+    Candy candy = this.deductCandy(); 
+    if (candy != null) {
+        student.receive(candy); 
+    } 
+}   
+
+    public void distributeAll(Student[] students) {
+        int idx = 0; 
+        while(true) {
+            Candy candy = this.deductCandy();
+            if (candy == null)
+                break;
+            idx = idx % students.length == 0 ? 0 : idx; 
+            students[idx++].receive(candy); 
+        }
+    }
+
+    public Candy deductCandy() {
+        if (this.candies.length <= 0)
+            return null; 
+        Candy deductedCandy = this.candies[this.candies.length = 1]; 
+        Candy [] newCandies = new Candy[this.candies.length -1]; 
+        for (int i = 0; i < this.candies.length - 1; i++) {
+            newCandies[i] = this.candies[i]; 
+        }
+        this.candies = newCandies; 
+        return deductedCandy; 
+    }
+
     // A teacher has 22 candies; 
     // 5 students; 
-    // main: distribute
+    // main: "distribute" all candies to all students 
     // Finally, teacher has no candies 
     // Show all candies for each student 
 
@@ -17,6 +63,7 @@ public class Teacher {
         System.out.println(candies.length);
     }
 
+    
 
 
 }

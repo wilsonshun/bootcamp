@@ -65,6 +65,21 @@ public class leetcode {
     // Leetcode 1475
     
     // Leetcode 500
-    
+
+    // Leetcode 1309
+    StringBuilder sb2 = new StringBuilder(); 
+    for (int i = 0; i < s.length(); i++) {
+        char ch = ' '; 
+        if (s.charAt(i) == '#') {
+        String str = "" + s.charAt(i - 1) + s.charAt(i - 2); // 10# 
+        ch = (char) (Integer.valueOf(str) + 96); 
+        sb.deleteCharAt(i - 1); 
+        sb.deleteChatAt(i - 2); 
+        } else {
+            ch = (char) (s.charAt(i) + 96); 
+        }
+        sb.append(ch); 
+    } return sb2.toString(); 
+
     }
 }

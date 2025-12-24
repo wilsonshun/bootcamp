@@ -55,8 +55,8 @@ public class DemoArray3 {
         String [] usernames = new String[] {"johnwong", "stevenchan", "jennyng"}; 
         String [] passwords = new String[] {"abcd1234", "ijk789", "xyz456"}; 
 
-        String[] usernameInput = "stevenchan"; 
-        String[] passwordInput = "ijk789"; 
+        String usernameInput = "stevenchan"; 
+        String passwordInput = "ijk789"; 
 
         // 1. Username is NOT found; 
         // 2. Password is wrong (Scenario: Username is found); 

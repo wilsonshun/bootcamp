@@ -224,6 +224,11 @@ public class DemoExercise {
         System.out.println(i);
     }
 
+    System.out.println("Sammi Cheng");
+    
+    int x20 = 2; 
+    int y20 = 3; 
+    System.out.println(x20 + y20);
     
 }
 }
